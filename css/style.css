@@ -1,0 +1,134 @@
+body {
+	margin: 0;
+
+}
+.basic {
+	width: 1200px;
+	height: 809px;
+	background-color: #202020;
+	display: inline-block;
+	float: left;
+}
+.nav {
+	display: inline-block;
+	float: left;
+	width: 237px;
+  	height: 809px;
+	background-color: #202020;
+}
+
+.header {
+	width: 237px;
+	height: 120px;
+	display: block;
+}
+.header span {
+
+  font-family: Yellowtail;
+  font-size: 42.5px;
+  text-align: left;
+  color: #f39c12;
+  padding-left: 25px;
+  text-decoration: none;
+}
+.header p {
+  font-family: OpenSans;
+  font-size: 12px;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 29px;
+
+}
+.all {
+	display: inline-block;
+	width: 88px;
+	height: 175px;
+	margin-left: 29px;
+	font-family: Oswald;
+  	font-size: 15px;
+    text-align: left;
+  	color: #ffffff;
+  	line-height: 1.33;
+  	text-transform: uppercase;
+  	padding: 0;
+}
+.all a {
+	text-decoration: none;
+	color: #ffffff;
+	font-family: Oswald;
+}
+#allproject {
+  color: #f39c12;
+}
+a:hover {
+	color: #f39c12;
+}
+.footer {
+	position: relative;
+	top: 400px;
+	 width: 155px;
+  height: 32px;
+  font-family: OpenSans;
+  font-size: 12px;
+  line-height: 1.67;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 30px;
+}
+.texture {
+	display: flex;
+	width: 963px;
+	height: 809px;
+	background:linear-gradient(45deg,rgba(255,255,255,0) 48%,rgba(255,255,255,.05) 50%,rgba(255,255,255,0) 52%),linear-gradient(-45deg,rgba(255,255,255,0) 48%,rgba(255,255,255,.05) 50%,rgba(255,255,255,0) 52%);
+	background-size: 5px 5px;
+	background-color: #202020;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: flex-start;
+
+}
+.gallery-item {
+   width: 190px;
+  height: 190px;
+  margin-left: 35px;
+  margin-top: 40px;
+  position: relative;
+
+
+}
+img {
+  filter: grayscale(1);
+}
+  img:hover {
+  filter: grayscale(0);
+  opacity: 0.8;
+}
+.gallery-item::after {
+    content: '';
+  position: absolute;
+  background: #f39c12;
+  width: 47px;
+  height: 47px;
+  left: 0;
+  top: 143px;
+  opacity: 0;
+}
+.gallery-item::before {
+  content: '';
+  position: absolute;
+  background: url(https://cdn.zeplin.io/5ad1c36c561d2cd9344c994d/assets/f76363a1-93a3-42f4-ae70-bae39eab1098.png) no-repeat;
+  width: 14px;
+  height: 15px;
+  left: 16px;
+  top: 160px;
+  z-index:40;
+  opacity: 0;
+}
+.gallery-item:hover::after{
+  opacity: 1;
+}
+.gallery-item:hover::before{
+  opacity: 1;
+}

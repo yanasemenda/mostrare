@@ -1,11 +1,11 @@
 body {
-	margin: 0;
-
+	margin: 0;	
+ 
 }
 .basic {
 	width: 1200px;
 	height: 809px;
-	background-color: #202020;
+	background-color: #202020; 
 	display: inline-block;
 	float: left;
 }
@@ -29,7 +29,7 @@ body {
   text-align: left;
   color: #f39c12;
   padding-left: 25px;
-  text-decoration: none;
+  text-decoration: none;  
 }
 .header p {
   font-family: OpenSans;
@@ -87,7 +87,7 @@ a:hover {
 	flex-direction: row;
 	align-items: flex-start;
 	align-content: flex-start;
-
+	
 }
 .gallery-item {
    width: 190px;
